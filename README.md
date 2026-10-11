@@ -157,6 +157,11 @@ Uygulama Netlify üzerinde sıfır sunucu maliyetiyle statik SPA olarak dağıt�
 * **Build command:** `npm run build`
 * **Publish directory:** `dist`
 
+Depodaki `netlify.toml`, build komutunu, `dist` yayın dizinini ve Node.js 24
+sürümünü tanımlar. GitHub deposunu bağlayarak build çalıştırın; kaynak klasörü
+yerine yalnızca derlenmiş `dist/` çıktısını yayınlayın. Manuel yüklemede de
+önce `npm run build` çalıştırıp yalnızca `dist/` klasörünü yükleyin.
+
 ### SPA Alt Rota Desteği (`_redirects`):
 React Router v6 ile istemci tarafı rotalamanın (örn. `/entries`, `/settings`) tarayıcı yenilemelerinde (F5) 404 vermemesi için `public/_redirects` dosyası mevcuttur:
 ```text
